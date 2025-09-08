@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000091EA"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Título -->
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="93dp"
+        android:paddingTop="20dp"
+        android:text="Bienvenido a Emergencias Médicas"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Logo de la app"
+        android:src="@drawable/logo" />
+
+    <!-- Botón Emergencia -->
+
+    <Button
+        android:id="@+id/btn_emergencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D50000"
+        android:padding="16dp"
+        android:text="🚨 Emergencia - Llamar"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <!-- Primera fila: Hospitales, Clínicas, Farmacias -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btn_hospitales"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#304FFE"
+            android:text="🏥 Hospitales"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_clinicas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#304FFE"
+            android:text="🩺 Clínicas"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_farmacias"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#304FFE"
+            android:text="💊 Farmacias"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- Segunda fila: Mapa, Primeros Auxilios -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_mapa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#91E4FB"
+            android:text="📍 Centro cercano"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_primeros_auxilios"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#91E4FB"
+            android:text="⛑ Primeros Auxilios"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
