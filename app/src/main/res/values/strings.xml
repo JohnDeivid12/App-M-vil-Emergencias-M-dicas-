@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">App Emergencias Medicas</string>
+    <string name="app_name">Emergencias Médicas</string>
+    <string name="titulo_app">Bienvenido a Emergencias Médicas</string>
+    <string name="desc_logo">Logo de Emergencias Médicas</string>
+
+    <!-- Botones principales -->
+    <string name="btn_emergencia">🚨 Emergencia - Llamar</string>
+    <string name="btn_hospitales">Hospitales</string>
+    <string name="btn_clinicas">Clínicas</string>
+    <string name="btn_farmacias">Farmacias</string>
+    <string name="btn_mapa">📍 Centro cercano</string>
+    <string name="btn_auxilios">➕ Primeros Auxilios</string>
+
+    <!-- Registro -->
+    <string name="hint_nombre">Nombre del lugar</string>
+    <string name="hint_tipo">Tipo (Hospital, Clínica, Farmacia)</string>
+    <string name="hint_direccion">Dirección</string>
+    <string name="hint_telefono">Teléfono</string>
+
+    <!-- Botones de registro/edición -->
+    <string name="btn_registrar">Registrar</string>
+    <string name="btn_listado">Ver Listado</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_actualizar">Actualizar</string>
+    <string name="btn_cancelar">Cancelar</string>
 </resources>

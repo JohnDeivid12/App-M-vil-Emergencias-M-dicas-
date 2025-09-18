@@ -2,10 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Funciones del dispositivo -->
     <uses-feature
         android:name="android.hardware.telephony"
         android:required="false" />
 
+    <!-- Permisos necesarios -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -21,24 +23,41 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppEmergenciasMedicas">
+
+        <!-- Pantalla de primeros auxilios -->
         <activity
             android:name=".PrimerosAuxilios"
             android:exported="false" />
+
+        <!-- Pantalla de listado -->
         <activity
             android:name=".Listado"
             android:exported="false" />
+
+        <!-- Pantalla de mapa -->
         <activity
             android:name=".Mapa"
             android:exported="false" />
+
+        <!-- 🚑 Pantalla de emergencias -->
+        <activity
+            android:name=".EmergenciaActivity"
+            android:exported="false" />
+
+        <!-- ✏ Pantalla para editar registros -->
+        <activity
+            android:name=".EditarActivity"
+            android:exported="false" />
+
+        <!-- Pantalla principal -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+    </application>
 </manifest>
