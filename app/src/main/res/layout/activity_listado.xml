@@ -2,19 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
+    <!-- 🔎 Barra de búsqueda -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Buscar centro médico"
+        android:iconifiedByDefault="false"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- 📋 Lista de Centros -->
     <ListView
         android:id="@+id/lista_centros"
         android:layout_width="match_parent"
-        android:layout_height="643dp" />
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
+    <!-- 🔙 Botón para regresar al MainActivity -->
     <Button
         android:id="@+id/btn_listado_a_inicio"
-        android:layout_width="171dp"
-        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#304FFE"
-        android:text="Ir al Inicio"
-        android:textSize="20sp" />
+        android:text="Volver al Inicio"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"/>
 </LinearLayout>
-
