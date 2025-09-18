@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText txtNombre, txtDireccion, txtTelefono;
     private Spinner spinnerTipo;
-    private Button btnRegistrar, btnVerListado, btnHospitales, btnClinicas, btnFarmacias, btnEmergencia;
+    private Button btnRegistrar, btnVerListado, btnHospitales, btnClinicas, btnFarmacias, btnEmergencia, btn_mapa, btn_primeros_auxilios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         txtTelefono = findViewById(R.id.txtTelefono); // ✅ Nuevo campo
         btnRegistrar = findViewById(R.id.btnRegistrar);
         btnVerListado = findViewById(R.id.btnVerListado);
+        btn_mapa = findViewById(R.id.btn_mapa);
+        btn_primeros_auxilios = findViewById(R.id.btn_primeros_auxilios);
 
         // Botones de filtro
         btnHospitales = findViewById(R.id.btn_hospitales);
@@ -74,6 +76,18 @@ public class MainActivity extends AppCompatActivity {
         // 🚑 Abrir vista de emergencias
         btnEmergencia.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, EmergenciaActivity.class);
+            startActivity(intent);
+        });
+
+        // Abrir mapa
+        btn_mapa.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, Mapa.class);
+            startActivity(intent);
+        });
+
+        // Abrir primeros auxilios
+        btn_primeros_auxilios.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, PrimerosAuxilios.class);
             startActivity(intent);
         });
     }

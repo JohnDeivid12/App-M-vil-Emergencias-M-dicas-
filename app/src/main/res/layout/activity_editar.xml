@@ -7,34 +7,34 @@
 
     <EditText
         android:id="@+id/txtEditarNombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="379dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="12dp"
         android:hint="Nombre del centro"
-        android:inputType="textPersonName"
-        android:layout_marginBottom="12dp"/>
+        android:inputType="textPersonName" />
 
     <Spinner
         android:id="@+id/spinnerEditarTipo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"/>
+        android:layout_width="382dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="12dp" />
 
     <EditText
         android:id="@+id/txtEditarDireccion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="374dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="12dp"
         android:hint="Dirección"
-        android:inputType="textPostalAddress"
-        android:layout_marginBottom="12dp"/>
+        android:inputType="textPostalAddress" />
 
     <!-- 📞 Campo teléfono -->
     <EditText
         android:id="@+id/txtEditarTelefono"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="379dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="20dp"
         android:hint="Teléfono"
-        android:inputType="phone"
-        android:layout_marginBottom="20dp"/>
+        android:inputType="phone" />
 
     <Button
         android:id="@+id/btnGuardarCambios"

@@ -1,37 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp">
+    android:background="#E6E6F6"
+    android:orientation="vertical"
+    android:padding="12dp">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
+        android:id="@+id/tv_primeros_auxilios"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
 
         <TextView
-            android:id="@+id/tv_titulo"
+            android:id="@+id/txtInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingBottom="16dp"
-            android:text="Primeros Auxilios"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv_primeros_auxilios"
-            android:layout_width="match_parent"
-            android:layout_height="476dp"
-            android:text="Aquí se mostrará la información obtenida de la API de Salud..."
+            android:lineSpacingExtra="2dp"
+            android:scrollbars="vertical"
+            android:text="Cargando información..."
             android:textSize="16sp" />
+    </ScrollView>
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="181dp"
-            android:layout_height="62dp"
-            android:backgroundTint="#304FFE"
-            android:text="Ir al Inicio"
-            android:textSize="20sp" />
-    </LinearLayout>
-</ScrollView>
+    <Button
+        android:id="@+id/btn_auxilios_a_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#304FFE"
+        android:text="Ir al Inicio" />
+</LinearLayout>

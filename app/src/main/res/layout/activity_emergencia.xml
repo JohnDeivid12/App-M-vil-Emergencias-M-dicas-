@@ -2,85 +2,94 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="#FAFAFA">
+    android:background="#2196F3"
+    android:padding="16dp">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <!-- Hospital 1 -->
         <LinearLayout
-            android:orientation="vertical"
-            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:background="@android:color/white"
             android:elevation="4dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:orientation="vertical"
+            android:padding="12dp">
 
             <TextView
-                android:text="Hospital San José"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital San Vicente de Paul"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:textStyle="bold" />
 
             <TextView
-                android:text="Ubicación: Quinchía, Risaralda"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Ubicación: Anserma, Caldas" />
 
             <TextView
-                android:text="Urgencias generales, pediatría"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Urgencias generales" />
 
             <Button
                 android:id="@+id/btnLlamarHospital"
-                android:text="Llamar"
-                android:backgroundTint="#D50000"
-                android:textColor="@android:color/white"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D50000"
+                android:text="Llamar"
+                android:textColor="@android:color/white" />
         </LinearLayout>
 
         <!-- Hospital 2 -->
         <LinearLayout
-            android:orientation="vertical"
-            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:background="@android:color/white"
             android:elevation="4dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:orientation="vertical"
+            android:padding="12dp">
 
             <TextView
-                android:text="Clínica Risaralda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Defensa Civil"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:textStyle="bold" />
 
             <TextView
-                android:text="Ubicación: Pereira, Risaralda"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Ubicación: Anserma, Caldas" />
 
             <TextView
-                android:text="Cardiología, cirugía"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Urgencias generales" />
 
             <Button
                 android:id="@+id/btnLlamarClinica"
-                android:text="Llamar"
-                android:backgroundTint="#D50000"
-                android:textColor="@android:color/white"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D50000"
+                android:text="Llamar"
+                android:textColor="@android:color/white" />
         </LinearLayout>
 
+        <Button
+            android:id="@+id/btn_emergencia_a_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#304FFE"
+            android:text="Volver al Inicio"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
     </LinearLayout>
 </ScrollView>
