@@ -1,46 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="#E6E6F6"
+    tools:context=".Mapa">
 
     <Button
         android:id="@+id/btn_mi_ubicacion"
         android:layout_width="wrap_content"
         android:layout_height="63dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#304FFE"
-        android:text="Buscar centro cercano"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <org.osmdroid.views.MapView
-        android:id="@+id/mapView"
-        android:layout_width="411dp"
-        android:layout_height="440dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Mostrar mi ubicación"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_mi_ubicacion"
-        app:layout_constraintVertical_bias="0.245"
-        tools:ignore="UnknownId" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_mapa_a_inicio"
         android:layout_width="182dp"
         android:layout_height="53dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#304FFE"
         android:text="Ir al Inicio"
-        android:textColorLink="#AA00FF"
-        android:textSize="20sp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/btn_mi_ubicacion" />
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_mapa_a_inicio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
